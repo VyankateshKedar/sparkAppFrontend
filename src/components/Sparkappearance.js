@@ -408,7 +408,7 @@ const SparkAppearancePage = () => {
       return navigate('/login');
     }
     // Fetch user profile (including appearance settings)
-    fetch('http://localhost:5000/api/user/me', {
+    fetch('https://sparkappbackend-2.onrender.com/api/user/me', {
       headers: { Authorization: `Bearer ${token}` }
     })
       .then((res) => {
@@ -433,7 +433,7 @@ const SparkAppearancePage = () => {
       .catch((err) => console.error('Error fetching user:', err));
 
     // Fetch user links
-    fetch('http://localhost:5000/api/links', {
+    fetch('https://sparkappbackend-2.onrender.com/api/links', {
       headers: { Authorization: `Bearer ${token}` }
     })
       .then((res) => {
@@ -481,7 +481,7 @@ const SparkAppearancePage = () => {
     const token = localStorage.getItem('authToken');
     if (!token) return;
     try {
-      const response = await fetch('http://localhost:5000/api/links', {
+      const response = await fetch('https://sparkappbackend-2.onrender.com/api/links', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -537,7 +537,7 @@ const SparkAppearancePage = () => {
             link.isActive ? (
               <a
                 key={link._id}
-                href={`http://localhost:5000/api/links/redirect/short/${link.shortUrl}`}
+                href={`https://sparkappbackend-2.onrender.com/api/links/redirect/short/${link.shortUrl}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ textDecoration: 'none', ...buttonStyle }}
@@ -556,7 +556,7 @@ const SparkAppearancePage = () => {
           link.isActive ? (
             <a
               key={link._id}
-              href={`http://localhost:5000/api/links/redirect/short/${link.shortUrl}`}
+              href={`https://sparkappbackend-2.onrender.com/api/links/redirect/short/${link.shortUrl}`}
               target="_blank"
               rel="noopener noreferrer"
               style={{ textDecoration: 'none', ...buttonStyle }}
