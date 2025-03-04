@@ -1,0 +1,150 @@
+.container {
+    background-color: white;
+    min-height: 100vh;
+    padding: 16px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .brandIcon {
+    color: #10b981;
+    font-size: 24px;
+  }
+  
+  .shareIcon {
+    width: 20px;
+    height: 20px;
+    color: #4b5563;
+  }
+  
+  /* Profile Card */
+  .profileCard {
+    border: 2px solid #e5e7eb;
+    border-radius: 24px;
+    padding: 16px;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profileContent {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    background-color: #111827;
+    border-radius: 16px;
+    padding: 24px;
+    text-align: center;
+  }
+  
+  .shareButton {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    padding: 8px;
+  }
+  
+  .profileImage {
+    width: 64px;
+    height: 64px;
+    background-color: #e5e7eb;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .profileName {
+    color: white;
+    margin-top: 12px;
+    font-weight: 600;
+  }
+  
+  .actionButtons {
+    width: 100%;
+    margin-top: 24px;
+    display: flex;
+    gap: 8px;
+  }
+  
+  .linkButton,
+  .shopButton {
+    flex: 1;
+    padding: 8px 16px;
+    border-radius: 24px;
+    font-weight: 500;
+  }
+  
+  .linkButton {
+    background-color: #10b981;
+    color: white;
+  }
+  
+  .shopButton {
+    background-color: rgba(209, 213, 219, 0.2);
+    color: white;
+  }
+  
+  .socialButton {
+    width: 100%;
+    background: rgba(209, 213, 219, 0.2);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .connectButton {
+    width: 100%;
+    background-color: #10b981;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 24px;
+    margin-top: auto;
+  }
+  
+  /* Profile Settings */
+  .profileSettings {
+    background: #f9fafb;
+    border-radius: 16px;
+    padding: 16px;
+  }
+  
+  .profileActions {
+    display: flex;
+    gap: 8px;
+    margin-top: 24px;
+  }
+  
+  .addButton {
+    flex: 1;
+    background-color: #10b981;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .saveButton {
+    width: 100%;
+    background-color: #10b981;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 24px;
+  }
+  

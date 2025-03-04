@@ -1,0 +1,308 @@
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sparkLogo {
+  color: #22c55e;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.marketplace {
+  color: #6b7280;
+}
+
+.signUpBtn {
+  background-color: #22c55e;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.signUpBtn:hover {
+  background-color: #16a34a;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  padding: 4rem 2rem;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.heroContent h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.heroContent p {
+  color: #6b7280;
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+.getSparkBtn {
+  background-color: #22c55e;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  width: fit-content;
+}
+
+.heroImage img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.monetization {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  padding: 4rem 2rem;
+  background-color: #f9fafb;
+}
+
+.moneyBlocks {
+  display: flex;
+  gap: 1rem;
+}
+
+.moneyBlock {
+  width: 4rem;
+  height: 6rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+  color: #22c55e;
+  font-weight: 600;
+}
+
+.monetizationContent h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.monetizationContent p {
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.contentSection {
+  padding: 4rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.contentMedia img {
+  width: 100%;
+  border-radius: 0.75rem;
+}
+
+.testimonials {
+  padding: 4rem 2rem;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.highlight {
+  color: #22c55e;
+}
+
+.testimonialGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.testimonialCard {
+  background-color: #f9fafb;
+  padding: 2rem;
+  border-radius: 0.75rem;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.authorAvatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #22c55e;
+  border-radius: 50%;
+}
+
+.authorInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.authorInfo span:first-child {
+  font-weight: 600;
+}
+
+.authorInfo span:last-child {
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.integrations {
+  padding: 4rem 2rem;
+  background-color: #f9fafb;
+}
+
+.integrations h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.integrationGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.integrationCard {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  transition: transform 0.2s ease;
+}
+
+.integrationCard:hover {
+  transform: translateY(-2px);
+}
+
+.integrationHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.iconContainer {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f4f6;
+}
+
+.integrationIcon {
+  color: #22c55e;
+}
+
+.integrationCard h3 {
+  font-weight: 600;
+  margin: 0;
+}
+
+.integrationCard p {
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin: 0;
+  padding-left: calc(40px + 1rem);
+}
+
+@media (max-width: 768px) {
+  .integrationGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.footer {
+  padding: 3rem 2rem;
+  background-color: #f9fafb;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+.loginBtn {
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  background-color: white;
+  cursor: pointer;
+}
+
+.footerLinks {
+  display: flex;
+  gap: 2rem;
+}
+
+.footerLinks a {
+  color: #6b7280;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+  .hero,
+  .monetization,
+  .contentSection {
+    grid-template-columns: 1fr;
+  }
+
+  .footerContent {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .heroContent h1 {
+    font-size: 2rem;
+  }
+}

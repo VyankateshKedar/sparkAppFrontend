@@ -1,0 +1,197 @@
+/* Main layout */
+.container {
+    display: flex;
+    height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 210px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 30px;
+  }
+  
+  .logoIcon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #27ae60;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .logoText {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .navLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .navItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #4b5563;
+    padding: 8px 0;
+    cursor: pointer;
+  }
+  
+  .navItem.active {
+    color: #27ae60;
+    font-weight: 500;
+  }
+  
+  .navIcon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .userProfile {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+  }
+  
+  .userAvatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .userAvatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .userName {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  /* Main Content */
+  .mainContent {
+    flex: 1;
+    padding: 24px 36px;
+    overflow: auto;
+  }
+  
+  .header {
+    margin-bottom: 30px;
+  }
+  
+  .greeting {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+  
+  .subGreeting {
+    color: #6b7280;
+    font-size: 15px;
+  }
+  
+  /* Form Styles */
+  .formContainer {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    margin-top: 10px;
+    overflow: hidden;
+  }
+  
+  .formHeader {
+    padding: 0 32px;
+    position: relative;
+  }
+  
+  .tabActive {
+    display: inline-block;
+    padding: 16px 0;
+    font-weight: 500;
+    color: #27ae60;
+    margin-right: 24px;
+    cursor: pointer;
+  }
+  
+  .tabIndicator {
+    position: absolute;
+    bottom: 0;
+    left: 32px;
+    width: 82px;
+    height: 2px;
+    background-color: #27ae60;
+  }
+  
+  .form {
+    padding: 20px 32px 32px;
+  }
+  
+  .formGroup {
+    margin-bottom: 24px;
+  }
+  
+  .formLabel {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 15px;
+    color: #374151;
+  }
+  
+  .formInput {
+    width: 100%;
+    padding: 10px 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: border-color 0.2s;
+  }
+  
+  .formInput:focus {
+    outline: none;
+    border-color: #27ae60;
+  }
+  
+  .formActions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  
+  .saveButton {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 24px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .saveButton:hover {
+    background-color: #219653;
+  }

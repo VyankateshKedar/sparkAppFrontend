@@ -1,0 +1,242 @@
+/* Main layout */
+.container {
+    display: flex;
+    height: 100vh;
+    background-color: #f9fafb;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 160px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .logoIcon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #22c55e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logoIcon span {
+    color: white;
+    font-weight: bold;
+  }
+  
+  .logoText {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .navLinks {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .navItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #4b5563;
+    cursor: pointer;
+  }
+  
+  .navItem.active {
+    color: #22c55e;
+    font-weight: 600;
+  }
+  
+  .navIcon {
+    font-size: 16px;
+  }
+  
+  .userProfile {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .userAvatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #dcfce7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .userAvatar span {
+    font-size: 12px;
+  }
+  
+  .userName {
+    font-size: 14px;
+  }
+  
+  /* Main Content */
+  .mainContent {
+    flex: 1;
+    padding: 24px;
+    overflow: auto;
+  }
+  
+  .header {
+    margin-bottom: 32px;
+  }
+  
+  .greeting {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .subGreeting {
+    color: #6b7280;
+  }
+  
+  .overviewHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .sectionTitle {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .dateSelector {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .calendarIcon {
+    color: #9ca3af;
+  }
+  
+  /* Metrics Grid */
+  .metricsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .metricCard {
+    padding: 16px;
+    border-radius: 8px;
+  }
+  
+  .metricLabel {
+    opacity: 0.8;
+    margin-bottom: 8px;
+  }
+  
+  .metricValue {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .primaryCard {
+    background-color: #22c55e;
+    color: white;
+  }
+  
+  .secondaryCard {
+    background-color: #dcfce7;
+    color: #064e3b;
+  }
+  
+  .tertiaryCard {
+    background-color: white;
+    color: #064e3b;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Charts */
+  .chartCard {
+    background-color: white;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chartTitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .chartsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .pieChartContainer {
+    display: flex;
+  }
+  
+  .pieChart {
+    width: 66%;
+  }
+  
+  .pieChartLegend {
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .legendItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .legendItemContent {
+    display: flex;
+    align-items: center;
+  }
+  
+  .legendDot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  
+  .legendText {
+    font-size: 14px;
+  }
+  
+  .legendValue {
+    font-size: 14px;
+    font-weight: bold;
+  }
