@@ -37,7 +37,7 @@ export default function PostSignupPage() {
       }
 
       // POST to save username, category in DB
-      const response = await fetch('http://localhost:5000/api/user/profile-setup', {
+      const response = await fetch('https://sparkappbackend-2.onrender.com/api/user/profile-setup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
