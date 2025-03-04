@@ -461,7 +461,7 @@ const SparkprofilePage = () => {
     }
 
     // 1) Fetch user profile
-    fetch('http://localhost:5000/api/user/me', {
+    fetch('https://sparkappbackend-2.onrender.com/api/user/me', {
       headers: { Authorization: `Bearer ${token}` }
     })
       .then((res) => {
@@ -477,7 +477,7 @@ const SparkprofilePage = () => {
       .catch((err) => console.error('Error fetching user:', err));
 
     // 2) Fetch user’s links
-    fetch('http://localhost:5000/api/links', {
+    fetch('https://sparkappbackend-2.onrender.com/api/links', {
       headers: { Authorization: `Bearer ${token}` }
     })
       .then((res) => {
@@ -496,7 +496,7 @@ const SparkprofilePage = () => {
       const token = localStorage.getItem('authToken');
       if (!token) throw new Error('No auth token');
 
-      const response = await fetch('http://localhost:5000/api/users/profile', {
+      const response = await fetch('https://sparkappbackend-2.onrender.com/api/users/profile', {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -529,7 +529,7 @@ const SparkprofilePage = () => {
       const token = localStorage.getItem('authToken');
       if (!token) throw new Error('No auth token');
 
-      const response = await fetch('http://localhost:5000/api/links', {
+      const response = await fetch('https://sparkappbackend-2.onrender.com/api/links', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -658,7 +658,7 @@ const SparkprofilePage = () => {
                   link.isActive ? (
                     <a
                     key={link._id}
-                    href={`http://localhost:5000/api/links/redirect/short/${link.shortUrl}`}
+                    href={`https://sparkappbackend-2.onrender.com/api/links/redirect/short/${link.shortUrl}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     style={styles.socialLink}
