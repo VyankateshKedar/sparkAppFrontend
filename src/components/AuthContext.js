@@ -22,7 +22,7 @@ export const AuthProvider = ({ children }) => {
         }
         
         // Verify token with backend
-        const response = await fetch('http://localhost:5000/api/auth/current-user', {
+        const response = await fetch('https://sparkappbackend-2.onrender.com/api/auth/current-user', {
           method: 'GET',
           headers: {
             'Authorization': `Bearer ${token}`
@@ -50,7 +50,7 @@ export const AuthProvider = ({ children }) => {
   // Login function
   const login = async (email, password) => {
     try {
-      const response = await fetch('http://localhost:5000/api/auth/login', {
+      const response = await fetch('https://sparkappbackend-2.onrender.com/api/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -68,7 +68,7 @@ export const AuthProvider = ({ children }) => {
       localStorage.setItem('authToken', data.token);
       
       // Fetch user data
-      const userResponse = await fetch('http://localhost:5000/api/auth/current-user', {
+      const userResponse = await fetch('https://sparkappbackend-2.onrender.com/api/auth/current-user', {
         headers: {
           'Authorization': `Bearer ${data.token}`
         }
@@ -92,7 +92,7 @@ export const AuthProvider = ({ children }) => {
   // Register function
   const register = async (userData) => {
     try {
-      const response = await fetch('http://localhost:5000/api/auth/register', {
+      const response = await fetch('https://sparkappbackend-2.onrender.com/api/auth/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
